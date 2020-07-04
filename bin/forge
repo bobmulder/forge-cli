@@ -27,7 +27,7 @@ if (! file_exists($configFile)) {
 
 $config = new Store(new File($configFile), new Json());
 
-$app = new Symfony\Component\Console\Application('Forge CLI', '0.2.0');
+$app = new Symfony\Component\Console\Application('Forge CLI', '0.5.0');
 
 $app->addCommands([
     new MakeAlias($config),
